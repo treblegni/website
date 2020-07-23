@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            name="description"
+            content="Peronsal Website for projects and bio"/>
+
+        <script src='js/jquery-compressed.js'></script>
+
+        <link rel="stylesheet" type="text/css" href='css/bootstrap.css'>
+        <link rel="stylesheet" type="text/css" href='css/main.css'>
+        
+        <title>Personal Website</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg nav navbar-dark bg-dark">
+            <!-- Change to own brand -->
+            <a class="navbar-brand" href="#">
+                <img src='img/logo-white.svg' class='nav-icon'>
+            </a>
+
+            <!-- Appears when screen is small: might change style -->
+            <!-- <button class="navbar-toggler nav-toggle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li> -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li> -->
+                </ul>
+                
+                <!-- Might use search component for later: use algolia services -->
+
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
+        </nav>
+        <div id='billboard' class='billboard'>
+            <!-- <img id='billboard-image' src='assets/img/image.svg' class='billboard-image'/> -->
+            <div class='billboard-label'>
+                <div>
+                    <h1>Ingelbert Figueroa</h1>
+                    <h4>Full Stack Developer</h4>
+                </div>
+            </div>
+        </div>
+        
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js'></script>
+        <script src='js/bootstrap.js'></script>
+        <script src='js/main.js'></script>
+    </body>
+</html>
