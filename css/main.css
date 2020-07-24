@@ -125,14 +125,15 @@ body {
 }
 
 .billboard-social {
+  background: black;
   position: absolute;
-  padding-top: 3.6rem;
+  padding-top: 3.2rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
   right: 0;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (min-height: 300px) {
   .billboard-social {
     bottom: 0;
   }
@@ -144,12 +145,15 @@ body {
   }
 }
 
-.billboard-social a:nth-child(2) {
-  padding-left: 2rem;
-}
-
 .billboard-social img {
   width: 40px;
+  height: auto;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+}
+
+.billboard-social img:hover {
+  width: 44px;
   height: auto;
 }
 

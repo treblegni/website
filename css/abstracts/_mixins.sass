@@ -3,12 +3,13 @@
         visibility: hidden
 
 @mixin billboardSocialPositioning ()
+    background: black
     position: absolute
-    padding-top: 3.6rem
+    padding-top: 3.2rem
     padding-right: 3rem
     padding-bottom: 3rem
     right: 0
-    @media screen and (min-width: $smallWidth)
+    @media screen and (min-width: $smallWidth) and (min-height: $xSmallHeight)
         bottom: 0
     @media screen and (max-width: $xSmallWidth)
         visibility: hidden
