@@ -9,15 +9,21 @@
     
 .billboard-label
     position: absolute
-    display: flex
-    align-items: center
-    width: 100%
-    height: 30vh
-    padding-left: 3rem
-    padding-right: 3rem
+    padding: 3rem
     bottom: 0
-    @include billboardLabelStyle($billboardWidth,$billboardHeight)
+    @include billboardLabelStyling()
 
 .billboard-label div h1, h4
     color: white
-    text-shadow: 2px 2px 15px grey
+    font-family: monospace
+    text-shadow: 1px 1px 10px grey
+
+.billboard-social
+    @include billboardSocialPositioning()
+
+.billboard-social a:nth-child(2) 
+    padding-left: 2rem
+    
+.billboard-social img
+    width: 40px
+    height: auto
