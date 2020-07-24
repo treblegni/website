@@ -20,10 +20,12 @@
 
 .billboard-social
     @include billboardSocialPositioning()
-
-.billboard-social a:nth-child(2) 
-    padding-left: 2rem
     
 .billboard-social img
     width: 40px
+    height: auto
+    transition: 0.25s ease
+
+.billboard-social img:hover
+    width: 44px
     height: auto
