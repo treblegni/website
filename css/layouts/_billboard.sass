@@ -1,10 +1,11 @@
 /* image */
 .billboard
-    height: 100vh
-    width: 100%
-    background: url('../img/image.svg') no-repeat
-    background-size: 105vw
+    height: $billboardHeight
+    width: $billboardWidth
+    background: url('../img/image.png') no-repeat
+    background-size: cover
     overflow: hidden
+    transition: .5s ease
     
 .billboard-label
     position: absolute
@@ -15,8 +16,7 @@
     padding-left: 3rem
     padding-right: 3rem
     bottom: 0
-    // background: url('../img/pattern.svg')
-    // background:rgba(0, 0, 0, 0.5)
+    @include billboardLabelStyle($billboardWidth,$billboardHeight)
 
 .billboard-label div h1, h4
     color: white
