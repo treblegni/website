@@ -19,13 +19,18 @@
     text-shadow: 1px 1px 10px grey
 
 .billboard-social
-    @include billboardSocialPositioning()
+    height: 9.2rem
+    width: 10rem
+    @include absoluteRight()
     
-.billboard-social img
-    width: 40px
-    height: auto
-    transition: 0.25s ease
+.billboard-social a
+    text-align: center
+    width: 44px
 
 .billboard-social img:hover
-    width: 44px
-    height: auto
+    width: 100%
+    transition: 0.3s ease
+
+.billboard-social img
+    width: 80%
+    transition: 0.3s ease
